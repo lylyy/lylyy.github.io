@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="cvApp">
+
+<head>
+    <title>CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/cv.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body ng-controller="cvController">
+    <div id="panel-header" class="light-green lighten-5">
+        <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <h2 class="civilite">{{cv.nom}}</h2>
+                    <h3 class="position"><i class="fa fa-search"></i> {{ cv.position }}</h3>
+                </div>
+                <div class="col s4 right-align">
+                    <ul class="coord">
+                        <li>
+                            <i class="fa fa-envelope"></i> <a href="mailto:{{ cv.email }}">{{ cv.email }}</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i> {{ cv.tel }}
+                        </li>
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <span>{{ cv.adresse.rue }}</span>
+                            <br /><span>{{ cv.adresse.cp }} – {{ cv.adresse.ville }}</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-venus"></i> {{cv.dateNaissance | formatAge}} ans</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-globe"></i> {{cv.nationalite}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s2 right-align">
+                    <div id="portrait">
+                        <img class="" alt="{{cv.nom}}" src="img/portrait.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div id="left-panel" class="col s4">
+                <div id="competences">
+                    <h4>Compétences</h4>
+                    <ul class="competences">
+                        <li ng-repeat="langage in cv.competences.programmation">
+                            <div class="row">
+                                <div class="col s2">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <div class="col s10">
+                                    {{langage.nom}} (
+                                    <span class="comma" ng-repeat="framework in langage.frameworks">{{ framework }}</span>)
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col s2">
+                                    <i class="fa fa-server"></i>
+                                </div>
+                                <div class="col s10">
+                                    <span class="comma" ng-repeat="server in cv.competences.servers">{{ server }}</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col s2">
+                                    <i class="fa fa-database"></i>
+                                </div>
+                                <div class="col s10">
+                                    <span class="comma" ng-repeat="db in cv.competences.rdbms">{{ db }}</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col s2">
+                                    <i class="fa fa-wrench"></i>
+                                </div>
+                                <div class="col s10">
+                                    <span class="comma" ng-repeat="outil in cv.competences.outils">{{ outil }}</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li ng-repeat="langue in cv.competences.langues">
+                            <div class="row">
+                                <div class="col s2">
+                                    <img ng-src="img/{{langue.code}}.png">
+                                </div>
+                                <div class="col s10">
+                                    <span class="comma">{{ langue.nom }}</span>
+                                    – {{ langue.niveau }}
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div id="perso">
+                    <div id="formations">
+                        <h5>Formations</h5>
+                        <ul>
+                            <li ng-repeat="formation in cv.formations">
+                                <div>
+                                    <b>{{ formation.annee }} – {{ formation.nom }}</b>
+                                </div>
+                                <div>
+                                    {{formation.description}}
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="interets">
+                        <h5>Centres d’intérêts</h5>
+                        <ul>
+                            <li ng-repeat="interet in cv.interets">
+                                <i class="fa fa-caret-right"></i> {{ interet }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="right-panel" class="col s8 white" ng-controller="projetController">
+                <h3>Expériences professionnelles</h3>
+                <div ng-repeat="projet in projets" class="card">
+                    <div ng-include="'template-project'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/ng-template" id="template-project">
+        <div class="avoid-page-break">
+            <div class="card-title blue-grey lighten-1 white-text">
+                <h4>
+                    {{projet.nom}}
+                    <div class="right periode">{{projet | formatPeriode}}</div>
+                </h4>
+            </div>
+
+            <div class="exp-content" ng-show="!projet.filtered">
+                <div class="exp-desc">
+                    {{projet.description}}
+                </div>
+                <div class="exp-type pull-right" ng-show="projet.taille">
+                    <h8>Dans une équipe de {{projet.taille}} personnes</h8>
+                </div>
+                <div class="exp-type" ng-show="projet.roles && projet.roles.length">
+                    <h8>Fonctions assumées</h8>
+                    <ul>
+                        <li ng-repeat="role in projet.roles">
+                            <i class="fa fa-chevron-right"></i> {{role}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="exp-type" ng-show="projet.desc && projet.desc.length">
+                    <ul>
+                        <li ng-repeat="descVal in projet.desc">
+                            - {{descVal}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="exp-tech" ng-show="projet.techniques && projet.techniques.length">
+                    <h8>Environnement</h8>
+                    <ul>
+                        <li ng-repeat="technique in projet.techniques">
+                            <i class="fa fa-caret-right"></i> {{technique}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div ng-repeat="projet in projet.projets" class="card">
+            <div ng-include="'template-project'"></div>
+        </div>
+        <div class="card card-poste-title avoid-page-break" ng-if="projet.postes && projet.postes.length">
+            <div class="card-title light-blue darken-4 white-text">
+                <h4>
+                    Postes occupés
+                </h4>
+            </div>
+            <div ng-repeat="projet in projet.postes" class="card-poste">
+                <div ng-include="'template-project'"></div>
+            </div>
+        </div>
+    </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment-with-locales.min.js"></script>
+
+    <script type="text/javascript" src="js/app/app.js?0001"></script>
+    <script type="text/javascript" src="js/app/service.js?0001"></script>
+    <script>
+        moment.locale('fr');
+    </script>
+</body>
+
+</html>
