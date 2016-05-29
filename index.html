@@ -59,8 +59,10 @@
                                     <i class="fa fa-code"></i>
                                 </div>
                                 <div class="col s10">
-                                    {{langage.nom}} (
-                                    <span class="comma" ng-repeat="framework in langage.frameworks">{{ framework }}</span>)
+                                    {{langage.nom}}
+                                    <span  ng-show="langage.frameworks && langage.frameworks.length" >
+                                     ( <span class="comma" ng-repeat="framework in langage.frameworks">{{ framework }} </span>)
+                                     </span>
                                 </div>
                             </div>
                         </li>

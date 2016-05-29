@@ -14,38 +14,41 @@ angular
             "email": "ying.li.paris@gmail.com",
             "position": "Ingénieur développement",
             "formations": [
-                { "annee": 2011, "nom": "Diplomée en Master 2 à UTC", "description":"Etudes Master 2 dans la spécialité «Systèmes Intelligents pour les Transports »" },
-                { "annee": 2008, "nom": "Université de Technologie de Compiègne (UTC)", "description":"Etudes d’ingénieur en Génie Informatique, dans le cadre des conventions d’échange avec l'Université de Xi’an Jiaotong(XJTU)" },
-                { "annee": 2006, "nom": "Université de Xi’an Jiaotong (XJTU)", "description":"Etudes en Génie Electriques" },                
+                { "annee": 2011, "nom": "Diplomée en Master 2 à UTC", "description": "Etudes Master 2 dans la spécialité «Systèmes Intelligents pour les Transports »" },
+                { "annee": 2008, "nom": "Université de Technologie de Compiègne (UTC)", "description": "Etudes d’ingénieur en Génie Informatique, dans le cadre des conventions d’échange avec l'Université de Xi’an Jiaotong(XJTU)" },
+                { "annee": 2006, "nom": "Université de Xi’an Jiaotong (XJTU)", "description": "Etudes en Génie Electrique" },
             ],
             "competences": {
                 "programmation": [
                     {
                         "nom": "C#",
                         "frameworks": ["WCF", "EntityFramework", "WPF"]
+                    },
+                    {
+                        "nom": "C++"
                     }
                 ],
                 "rdbms": ["SQL Server", "MySQL"],
                 "servers": ["IIS", "Windows server", "GeoServer"],
-                "outils": ["Visual Studio", "TFS", "Moq", "StyleCop", "FxCop", "CodeContracts"],
+                "outils": ["Visual Studio", "Microsoft Visio 2007", "TFS", "Moq", "StyleCop", "FxCop", "CodeContracts"],
                 "langues": [
-                    { "nom": "Français", "niveau": "bilingue", "code" : "French" },
-                    { "nom": "Chinois", "niveau": "maternelle", "code" : "Chinese" },
-                    { "nom": "Anglais", "niveau": "couramment", "code" : "English" }
+                    { "nom": "Français", "niveau": "bilingue", "code": "French" },
+                    { "nom": "Chinois", "niveau": "maternelle", "code": "Chinese" },
+                    { "nom": "Anglais", "niveau": "couramment", "code": "English" }
                 ]
             },
             "interets": [
                 "Natation", "Danses de salon", "Couture", "Jeux de plateaux"
             ]
         };
-        
-        
+
+
         var _projets = [
             {
                 "nom": "SUEZ (Ondeo Systems)",
                 "debut": "2011-02-01",
                 "description": "Au sein d'un service d'édition logicielle proposant des solutions temps réel pour la surveillance et le pilotage des réseaux de distribution et d'assainissement de l'eau, je suis intervenue sur les projets suivants :",
-                "hiddentechs": "",                
+                "hiddentechs": "",
                 "projets": [
                     {
                         "nom": "Aquadvanced",
@@ -55,7 +58,7 @@ angular
                             "Un back office qui permet la collecte des données, ainsi que les calculs d'indicateurs et la détection de fuite à l'aide de modèles statistiques et hydrauliques",
                             "Un front office qui offre une vision cartographique du réseau de distribution, des indicateurs et de la localisation des fuites"
                         ],
-                        "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",                        
+                        "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",
                     },
                     {
                         "nom": "Em2s",
@@ -67,7 +70,7 @@ angular
                 "postes": [
                     {
                         "nom": "Responsable de la maintenance applicative",
-                        "description":"Gestion de la maintenace corrective et réalisation des tests d'integration sur les nouvelles fonctionnalités des applications Aquadvanced et Em2s",
+                        "description": "Gestion de la maintenace corrective et réalisation des tests d'intégration sur les nouvelles fonctionnalités des applications Aquadvanced et Em2s",
                         "debut": "2014-06-01",
                         "roles": [
                             "Analyse et qualification des anomalies",
@@ -75,8 +78,8 @@ angular
                             "Assurer la cohérence entre différents besoins fonctionnels",
                             "Réalisation des tests d'intégration"
                         ],
-                        "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",                        
-                    },   
+                        "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",
+                    },
                     {
                         "nom": "Ingénieur développement sur l'application Aquadvanced",
                         "debut": "2013-06-01",
@@ -86,15 +89,15 @@ angular
                             "Coordination technique avec l'équipe front office en Espagne",
                             "Gestion de release et test d'intégration",
                             "Support technique"
-                          ],
+                        ],
                         "techniques": [
                             "C#, WCF",
                             "Entity Framework 6, MS Sql Server",
                             "Windows Server 2012, GeoServer",
                             "Visual Studio, TFS, Moq, CodeContracts"
                         ],
-                        "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",                        
-                    }     ,   
+                        "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",
+                    },
                     {
                         "nom": "Ingénieur développement sur framework métier Em2s",
                         "debut": "2011-02-01",
@@ -103,16 +106,36 @@ angular
                             "Analyse, conception et développement",
                             "Gestion de release et test d'intégration",
                             "Support technique"
-                            ],
-                          "techniques": [
+                        ],
+                        "techniques": [
                             "C#, WCF",
                             "Entity Framework 6, MS Sql Server",
                             "Windows Server 2012",
                             "Visual Studio, TFS, Moq, CodeContracts"
                         ],
-                        "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",                        
-                    }               
+                        "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",
+                    }
                 ]
+            },
+            {
+                "nom": "Veolia (MERCUR)",
+                "debut": "2010-02-01",
+                "fin": "2010-08-15",
+                "description": "Participer aux développement d'un outil de calcul informatique permettant une diminution des émissions de GES en élaborant des scenarii alternatifs à partir d’une situation initiale décrite par l’utilisateur",
+                "hiddentechs": "",
+                "projets": [{
+                    "nom": "Stage",
+                    "description": "Réalisation l'interaction entre l’interface graphique et la base de données",
+                    "roles": [
+                        "Réalisation"
+                    ],
+                    "techniques": [
+                        "C++",
+                        "MySQL",
+                        "Visual Studio 2008 C++, Microsoft Visio 2007"
+                    ],
+                    "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",
+                }]
             }
         ];
 

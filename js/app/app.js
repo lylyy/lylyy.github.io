@@ -26,6 +26,13 @@ angular
             return "depuis " + debut.format("YYYY");
         }
         
+        if(debut.year() === fin.year()) {
+            if(debut.month() === fin.month()) {
+                return debut.format("MMMM YYYY");
+            }
+            return debut.format("MMMM") + " - " + fin.format("MMMM YYYY");
+        }
+        
         return debut.format("YYYY") + " - " + fin.format("YYYY");
     }
 })
