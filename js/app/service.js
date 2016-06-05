@@ -5,14 +5,13 @@ angular
             "nom": "Ying LI",
             "dateNaissance": "1988-09-29+01:00",
             "adresse": {
-                "rue": "2, rond point de l'aube",
-                "cp": "95800",
                 "ville": "Cergy"
             },
             "nationalite": "Chinoise",
             "tel": "06.69.43.94.11",
             "email": "ying.li.paris@gmail.com",
             "position": "Ingénieur développement",
+            "search": "MOE",
             "formations": [
                 { "annee": 2011, "nom": "Diplomée en Master 2 à UTC", "description": "Etudes Master 2 dans la spécialité «Systèmes Intelligents pour les Transports »" },
                 { "annee": 2008, "nom": "Université de Technologie de Compiègne (UTC)", "description": "Etudes d’ingénieur en Génie Informatique, dans le cadre des conventions d’échange avec l'Université de Xi’an Jiaotong(XJTU)" },

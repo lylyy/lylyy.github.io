@@ -16,7 +16,8 @@
             <div class="row">
                 <div class="col s6">
                     <h2 class="civilite">{{cv.nom}}</h2>
-                    <h3 class="position"><i class="fa fa-search"></i> {{ cv.position }}</h3>
+                    <h3 class="position">{{ cv.position }}</h3>
+                    <h3 class="search"><i class="fa fa-search"></i> {{ cv.search }}</h3>
                 </div>
                 <div class="col s4 right-align">
                     <ul class="coord">
@@ -28,8 +29,7 @@
                         </li>
                         <li>
                             <i class="fa fa-map-marker"></i>
-                            <span>{{ cv.adresse.rue }}</span>
-                            <br /><span>{{ cv.adresse.cp }} – {{ cv.adresse.ville }}</span>
+                            <span>{{ cv.adresse.ville }}</span>
                         </li>
                         <li>
                             <i class="fa fa-venus"></i> {{cv.dateNaissance | formatAge}} ans</a>
