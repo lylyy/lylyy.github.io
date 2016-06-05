@@ -25,6 +25,9 @@ angular
                         "frameworks": ["WCF", "EntityFramework", "WPF"]
                     },
                     {
+                        "nom": "TypeScript, AngularJs"
+                    },
+                    {
                         "nom": "C++"
                     }
                 ],
@@ -92,6 +95,7 @@ angular
                         ],
                         "techniques": [
                             "C#, WCF",
+                            "TypeScript, AngularJs",
                             "Entity Framework 6, MS Sql Server",
                             "Windows Server 2012, GeoServer",
                             "Visual Studio, TFS, Moq, CodeContracts"
