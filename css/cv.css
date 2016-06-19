@@ -157,6 +157,11 @@ h8 {
     font-size: 0.8em;
 }
 
+#print{
+    float: right;
+    cursor: pointer;
+}
+
 @media print {
     body {
         font-size: small;
@@ -183,6 +188,10 @@ h8 {
         margin: 0.20rem 0 0.20rem 0;      
     }
     
+    .exp-content {
+        padding: 5px;
+    }
+
     .container { width: 97%;}    
     
     #panel-header {
@@ -238,5 +247,9 @@ h8 {
     
     #portrait{
         margin-right: 40px;
+    }
+
+    #print{
+        display: none;
     }
 }

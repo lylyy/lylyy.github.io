@@ -1,6 +1,6 @@
 angular
     .module('cvApp', ['cvService'])
-    .controller('cvController', function ($scope, cv) {
+    .controller('cvController', function ($scope, cv, $window) {
         cv.get().then(function (cv) {
             $scope.cv = cv;
         });
@@ -8,6 +8,10 @@ angular
         $scope.filter = function (term) {
             console.log('filter: ' + term);
             cv.filterProjets(term)
+        }
+
+        $scope.print=function () {
+            $window.print();
         }
     })
     .controller('projetController', function ($scope, cv) {

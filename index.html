@@ -17,7 +17,7 @@
                 <div class="col s6">
                     <h2 class="civilite">{{cv.nom}}</h2>
                     <h3 class="position">{{ cv.position }}</h3>
-                    <h3 class="search"><i class="fa fa-search"></i> {{ cv.search }}</h3>
+                    <h3 ng-show="cv.search" class="search"><i class="fa fa-search"></i> {{ cv.search }}</h3>
                 </div>
                 <div class="col s4 right-align">
                     <ul class="coord">
@@ -60,9 +60,9 @@
                                 </div>
                                 <div class="col s10">
                                     {{langage.nom}}
-                                    <span  ng-show="langage.frameworks && langage.frameworks.length" >
+                                    <span ng-show="langage.frameworks && langage.frameworks.length">
                                      ( <span class="comma" ng-repeat="framework in langage.frameworks">{{ framework }} </span>)
-                                     </span>
+                                    </span>
                                 </div>
                             </div>
                         </li>
@@ -103,8 +103,7 @@
                                     <img ng-src="img/{{langue.code}}.png">
                                 </div>
                                 <div class="col s10">
-                                    <span class="comma">{{ langue.nom }}</span>
-                                    – {{ langue.niveau }}
+                                    <span class="comma">{{ langue.nom }}</span> – {{ langue.niveau }}
                                 </div>
                             </div>
                         </li>
@@ -137,7 +136,11 @@
                 </div>
             </div>
             <div id="right-panel" class="col s8 white" ng-controller="projetController">
-                <h3>Expériences professionnelles</h3>
+                <h3>Expériences professionnelles
+                    <div id="print" ng-click="print()">
+                        <i class="fa fa-print" aria-hidden="true"></i>
+                    </div>
+                </h3>
                 <div ng-repeat="projet in projets" class="card">
                     <div ng-include="'template-project'"></div>
                 </div>

@@ -11,7 +11,6 @@ angular
             "tel": "06.69.43.94.11",
             "email": "ying.li.paris@gmail.com",
             "position": "Ingénieur développement",
-            "search": "MOE",
             "formations": [
                 { "annee": 2011, "nom": "Diplomée en Master 2 à UTC", "description": "Etudes Master 2 dans la spécialité «Systèmes Intelligents pour les Transports »" },
                 { "annee": 2008, "nom": "Université de Technologie de Compiègne (UTC)", "description": "Etudes d’ingénieur en Génie Informatique, dans le cadre des conventions d’échange avec l'Université de Xi’an Jiaotong(XJTU)" },
@@ -93,10 +92,8 @@ angular
                             "Support technique"
                         ],
                         "techniques": [
-                            "C#, WCF",
-                            "TypeScript, AngularJs",
-                            "Entity Framework 6, MS Sql Server",
-                            "Windows Server 2012, GeoServer",
+                            "C#, WCF, TypeScript, AngularJs",
+                            "Entity Framework 6, MS Sql Server, Windows Server 2012, GeoServer",
                             "Visual Studio, TFS, Moq, CodeContracts"
                         ],
                         "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",
@@ -112,8 +109,7 @@ angular
                         ],
                         "techniques": [
                             "C#, WCF",
-                            "Entity Framework 6, MS Sql Server",
-                            "Windows Server 2012",
+                            "Entity Framework 6, MS Sql Server, Windows Server 2012",
                             "Visual Studio, TFS, Moq, CodeContracts"
                         ],
                         "hiddentechs": "Subversion Visual Studio Anglais EntityFramework JavaScript",
