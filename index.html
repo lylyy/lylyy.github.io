@@ -64,7 +64,8 @@
                                 <div class="col s10">
                                     {{langage.nom}}
                                     <span ng-show="langage.frameworks && langage.frameworks.length">
-                                     ( <span class="comma" ng-repeat="framework in langage.frameworks">{{ framework }}</span>)
+                                        ( <span class="comma" ng-repeat="framework in langage.frameworks">{{ framework
+                                            }}</span>)
                                     </span>
                                 </div>
                             </div>
@@ -154,10 +155,12 @@
     <script type="text/ng-template" id="template-project">
         <div class="avoid-page-break">
             <div class="card-title blue-grey lighten-1 white-text">
-                <h4>
-                    {{projet.nom}}
-                    <div class="right periode">{{projet | formatPeriode}}</div>
-                </h4>
+                <div class="row block-title">
+                    <div class="col s12 m8">
+                        {{projet.nom}}
+                    </div>
+                    <div class="col s12 m4 right-align">{{projet | formatPeriode}}</div>
+                </div>
             </div>
 
             <div class="exp-content" ng-show="!projet.filtered">
@@ -197,11 +200,6 @@
             <div ng-include="'template-project'"></div>
         </div>
         <div class="card card-poste-title avoid-page-break" ng-if="projet.postes && projet.postes.length">
-            <!-- <div class="card-title light-blue darken-4 white-text">
-                <h6>
-                    Postes occupés
-                </h6>
-            </div> -->
             <div ng-repeat="projet in projet.postes" class="card-poste">
                 <div ng-include="'template-project'"></div>
             </div>
