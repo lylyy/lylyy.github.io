@@ -14,12 +14,12 @@
     <div id="panel-header" class="light-green lighten-5">
         <div class="container">
             <div class="row">
-                <div class="col s6">
+                <div class="col l5 m3 s6">
                     <h2 class="civilite">{{cv.nom}}</h2>
                     <h3 class="position">{{ cv.position }}</h3>
                     <h3 ng-show="cv.search" class="search"><i class="fa fa-search"></i> {{ cv.search }}</h3>
                 </div>
-                <div class="col s4 right-align">
+                <div class="col l4 m4 s6 right-align">
                     <ul class="coord">
                         <li>
                             <i class="fa fa-envelope"></i> <a href="mailto:{{ cv.email }}">{{ cv.email }}</a>
@@ -42,7 +42,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col s2 right-align">
+                <div class="col l3 m5 s12 right-align">
                     <div id="portrait">
                         <img class="" alt="{{cv.nom}}" src="img/portrait.png" alt="">
                     </div>
@@ -52,7 +52,7 @@
     </div>
     <div>
         <div class="row">
-            <div id="left-panel" class="col s4">
+            <div id="left-panel" class="col l4 s12">
                 <div id="competences">
                     <h4>Compétences</h4>
                     <ul class="competences">
@@ -138,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div id="right-panel" class="col s8 white" ng-controller="projetController">
+            <div id="right-panel" class="col l8 s12 white" ng-controller="projetController">
                 <h3>Expériences professionnelles
                     <div id="print" ng-click="print()">
                         <i class="fa fa-print" aria-hidden="true"></i>

@@ -90,7 +90,7 @@ angular
                         "nom": "Aquaviz",
                         "debut": "2017-06-01",
                         "fin": "2018-08-01",
-                        "description": "Aquaviz est une librarie de composants UI et de modules utilisée par l'ensemble des logiciels Suez Smart Solutions permettant de gérer les données liées à la surveillance de l’environnement.",
+                        "description": "Aquaviz est une librairie de composants UI et de modules utilisée par l'ensemble des logiciels Suez Smart Solutions permettant de gérer les données liées à la surveillance de l’environnement.",
                         "desc": [
                         ],
                         "postes": [
@@ -101,7 +101,7 @@ angular
                                     "Analyse des besoins et des spécifications fonctionnelles",
                                     "Organisation des releases (découpage, définition des besoins en ressources)",
                                     "Suivis de l’avancement du projet et des coûts",
-                                    "Revue du code, test fonctionnels",
+                                    "Revue du code, tests fonctionnels",
                                     "Développement de fonctionnalités (Form, Chart, Dashboard)",
                                     "Rédaction de la documentation technique",
                                     "Support technique"
@@ -173,11 +173,11 @@ angular
                 "nom": "Veolia (MERCUR)",
                 "debut": "2010-02-01",
                 "fin": "2010-08-15",
-                "description": "Participer aux développement d'un outil de calcul informatique permettant une diminution des émissions de GES en élaborant des scenarii alternatifs à partir d’une situation initiale décrite par l’utilisateur",
+                "description": "Participer au développement d'un outil de calcul informatique permettant une diminution des émissions de GES en élaborant des scenarii alternatifs à partir d’une situation initiale décrite par l’utilisateur",
                 "hiddentechs": "",
                 "projets": [{
                     "nom": "Stage",
-                    "description": "Réalisation l'interaction entre l’interface graphique et la base de données",
+                    "description": "Réalisation de l'interaction entre l’interface graphique et la base de données",
                     "roles": [
                         "Réalisation"
                     ],
