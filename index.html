@@ -11,7 +11,7 @@
 </head>
 
 <body ng-controller="cvController">
-    <div id="panel-header" class="light-green lighten-5">
+    <div id="panel-header">
         <div class="container">
             <div class="row">
                 <div class="col l5 m3 s6">
@@ -54,7 +54,7 @@
         <div class="row">
             <div id="left-panel" class="col l4 s12">
                 <div id="competences">
-                    <h4>Compétences</h4>
+                    <h3>Compétences</h3>
                     <ul class="competences">
                         <li ng-repeat="langage in cv.competences.programmation">
                             <div class="row">
@@ -100,7 +100,6 @@
                                 </div>
                             </div>
                         </li>
-
                         <li ng-repeat="langue in cv.competences.langues">
                             <div class="row">
                                 <div class="col s2">
@@ -117,7 +116,7 @@
 
                 <div id="perso">
                     <div id="formations">
-                        <h5>Formations</h5>
+                        <h3>Formations</h3>
                         <ul>
                             <li ng-repeat="formation in cv.formations">
                                 <div>
@@ -130,7 +129,7 @@
                         </ul>
                     </div>
                     <div id="interets">
-                        <h5>Centres d’intérêts</h5>
+                        <h3>Centres d’intérêts</h3>
                         <ul>
                             <li ng-repeat="interet in cv.interets">
                                 <i class="fa fa-caret-right"></i> {{ interet }}
@@ -154,7 +153,7 @@
 
     <script type="text/ng-template" id="template-project">
         <div class="avoid-page-break">
-            <div class="card-title blue-grey lighten-1 white-text">
+            <div class="card-title">
                 <div class="row block-title">
                     <div class="col s12 m8">
                         {{projet.nom}}

@@ -7,7 +7,8 @@ a {
 }
 
 #panel-header {
-  border-bottom: 1px solid black;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  background-color: #fffcf0;
 }
 
 #panel-header .row {
@@ -63,10 +64,6 @@ a {
   border: 2px solid black;
 }
 
-#left-panel {
-  padding: 20px;
-}
-
 #competences .fa-filter {
   font-size: 0.4em;
   cursor: pointer;
@@ -114,13 +111,18 @@ a {
   font-size: 1.1em;
   margin: 0;
   padding: 7px;
+  display: flex;
 }
 .card .card .block-title {
   font-size: 0.9em;
 }
 
+.card-title{
+  background-color: #e4e7ec;
+}
+
 .card .card .card-title {
-  background-color: #bcaaa4 !important;
+  background-color: #c9d6de;
 }
 
 .card .card-poste-title .card-poste .block-title {
@@ -128,23 +130,15 @@ a {
 }
 
 .card .card-poste-title .card-poste .card-title {
-  background-color: #c5cae9 !important;
+  background-color: #6d819c;
 }
 
 .card .card-poste-title .block-title {
   font-size: 0.9em;
 }
 
-.card .card-poste-title .card-title {
-  background-color: #9fa8da !important;
-}
-
 .card .card .card .block-title {
   font-size: 0.7em;
-}
-
-.card .card .card .card-title {
-  background-color: #004d40 !important;
 }
 
 .exp-content {
@@ -180,6 +174,11 @@ h8 {
 }
 
 @media print {
+
+  #panel-header .row {
+    display: flex;
+  }
+
   body {
     font-size: small;
   }
@@ -189,7 +188,7 @@ h8 {
   }
 
   h3 {
-    font-size: 1.84rem;
+    font-size: 2.28rem;
     margin: 0.82rem 0 0.82rem 0;
   }
 
@@ -223,7 +222,7 @@ h8 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2px;
+    padding: 10px;
   }
 
   #competences {
@@ -250,11 +249,6 @@ h8 {
     flex: auto;
   }
 
-  #right-panel {
-    width: 100%;
-    border-top: 1px solid darkgrey;
-  }
-
   .avoid-page-break {
     page-break-inside: avoid;
   }
@@ -265,7 +259,8 @@ h8 {
   }
 
   #portrait {
-    margin-right: 40px;
+    /* display: none; */
+    /* margin-right: 40px; */
   }
 
   #print {
