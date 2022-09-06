@@ -65,6 +65,7 @@ angular
                         "postes": [
                             {
                                 "nom": "Dev Lead / Tech Lead",
+                                "type": "poste",
                                 "taille": 4,
                                 "roles": [
                                     "Gestion et recrutement des développeurs",
@@ -96,6 +97,7 @@ angular
                         "postes": [
                             {
                                 "nom": "Dev Lead / Développeur Front End",
+                                "type": "poste",
                                 "taille": 6,
                                 "roles": [
                                     "Analyse des besoins et des spécifications fonctionnelles",
@@ -125,6 +127,7 @@ angular
                         "postes": [
                             {
                                 "nom": "Ingénieur développement / Responsable de maintenance",
+                                "type": "poste",
                                 "taille": 6,
                                 "roles": [
                                     "Analyse, conception et développement de la partie back office",
@@ -150,6 +153,7 @@ angular
                         "postes": [
                             {
                                 "nom": "Ingénieur développement / Responsable de maintenance",
+                                "type": "poste",
                                 "taille": 4,
                                 "roles": [
                                     "Analyse, conception et développement des fonctionnalités",

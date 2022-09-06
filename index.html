@@ -158,7 +158,7 @@
                     <div class="block-title-name">
                         {{projet.nom}}
                     </div>
-                    <div class="right-align block-title-period">{{projet | formatPeriode}}</div>
+                    <div ng-if="projet.type !=='poste'" class="right-align block-title-period">{{projet | formatPeriode}}</div>
                 </div>
             </div>
 

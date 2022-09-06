@@ -195,6 +195,10 @@ h8 {
     font-size: 2rem;
   }
 
+  .position {
+    font-size: 1.25em;
+  }
+
   .card{
     margin: 5px !important;
   }
@@ -203,16 +207,26 @@ h8 {
     border: none !important;
   }
 
+  .card.projects .projects .card-poste-title .card-title {
+    border: none !important;
+  }
+
+  .card.projects .projects .card-title {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important; 
+    print-color-adjust: exact !important;
+  }
+
+  .card .card-poste-title .card-poste .card-title {
+    background-color: #afbed1!important;
+  }
+
   .card.projects .card-title {
     border-bottom: 5px solid darkgrey;
   }
 
   .card.projects .projects .card-title {
-    border-bottom: 3px solid darkgrey;
-  }
-
-  .card.projects .projects .card-poste-title .card-title {
-    border: none !important;
+    border: none;
   }
 
   h3 {
