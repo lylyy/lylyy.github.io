@@ -144,7 +144,7 @@
                         <i class="fa fa-print" aria-hidden="true"></i>
                     </div>
                 </h4>
-                <div ng-repeat="projet in projets" class="card">
+                <div ng-repeat="projet in projets" class="card projects">
                     <div ng-include="'template-project'"></div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
             </div>
         </div>
 
-        <div ng-repeat="projet in projet.projets" class="card">
+        <div ng-repeat="projet in projet.projets" class="card projects avoid-page-break">
             <div ng-include="'template-project'"></div>
         </div>
         <div class="card card-poste-title avoid-page-break" ng-if="projet.postes && projet.postes.length">

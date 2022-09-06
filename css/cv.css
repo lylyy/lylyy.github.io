@@ -199,6 +199,22 @@ h8 {
     margin: 5px !important;
   }
 
+  .card.projects {
+    border: none !important;
+  }
+
+  .card.projects .card-title {
+    border-bottom: 5px solid darkgrey;
+  }
+
+  .card.projects .projects .card-title {
+    border-bottom: 3px solid darkgrey;
+  }
+
+  .card.projects .projects .card-poste-title .card-title {
+    border: none !important;
+  }
+
   h3 {
     font-size: 2.28rem;
     margin: 0.82rem 0 0.82rem 0;
