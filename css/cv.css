@@ -7,7 +7,7 @@ a {
 }
 
 #panel-header {
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: #fffcf0;
 }
 
@@ -30,6 +30,7 @@ a {
   margin: 0.5rem 0 0.3rem 0;
   font-size: 1.5em;
 }
+
 .search {
   margin: 0.5rem 0 0.3rem 0;
   font-size: 1.5em;
@@ -44,12 +45,15 @@ a {
 .coord i {
   margin-right: 2px;
 }
+
 .coord .fa-phone {
   margin-right: 4px;
 }
-.coord .fa-globe ~ span:last-child {
+
+.coord .fa-globe~span:last-child {
   margin-left: 15px;
 }
+
 .coord .fa-github {
   margin-right: 6px;
 }
@@ -59,6 +63,7 @@ a {
   background-color: #fff;
   line-height: 0;
 }
+
 #portrait img {
   width: 210px;
   border: 2px solid black;
@@ -80,15 +85,16 @@ a {
 .comma::after {
   content: ", ";
 }
+
 .comma:last-child::after {
   content: "";
 }
 
-.competences span.comma > span {
+.competences span.comma>span {
   cursor: pointer;
 }
 
-.competences span.comma > span:hover {
+.competences span.comma>span:hover {
   text-decoration: underline;
 }
 
@@ -113,11 +119,12 @@ a {
   padding: 7px;
   display: flex;
 }
+
 .card .card .block-title {
   font-size: 0.9em;
 }
 
-.card-title{
+.card-title {
   background-color: #e4e7ec;
 }
 
@@ -167,8 +174,7 @@ h8 {
   cursor: pointer;
 }
 
-.block-title-name 
-{
+.block-title-name {
   width: 60%;
 }
 
@@ -200,7 +206,7 @@ h8 {
     font-size: 1.25em;
   }
 
-  .card{
+  .card {
     margin: 5px !important;
   }
 
@@ -214,16 +220,24 @@ h8 {
 
   .card.projects .projects .card-title {
     -webkit-print-color-adjust: exact !important;
-    color-adjust: exact !important; 
+    color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
   .card .card-poste-title .card-poste .card-title {
-    background-color: #afbed1!important;
+    background-color: #afbed1 !important;
   }
 
   .card.projects .card-title {
     border-bottom: 5px solid darkgrey;
+  }
+
+  .card .card-title {
+    background-color: white !important;
+  }
+
+  .card .card .card-title {
+    background-color: #c9d6de !important;
   }
 
   .card.projects .projects .card-title {
@@ -266,7 +280,7 @@ h8 {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px;
-  } 
+  }
 
   #competences {
     flex: 45;
