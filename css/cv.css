@@ -97,7 +97,7 @@ a {
 }
 
 .card {
-  margin: 10px !important;
+  margin: 8px !important;
   padding-bottom: 5px;
 }
 
@@ -115,6 +115,14 @@ a {
 }
 .card .card .block-title {
   font-size: 0.9em;
+}
+
+.block-title .block-title-name{
+  width: 100%;
+}
+
+.block-title .block-title-period{
+  width: 100%;
 }
 
 .card-title{
@@ -167,7 +175,7 @@ h8 {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .title-with-date {
     height: 72px;
   }
@@ -185,6 +193,10 @@ h8 {
 
   h2 {
     font-size: 2rem;
+  }
+
+  .card{
+    margin: 5px !important;
   }
 
   h3 {
@@ -223,7 +235,7 @@ h8 {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px;
-  }
+  } 
 
   #competences {
     flex: 45;
@@ -256,11 +268,6 @@ h8 {
   .card {
     box-shadow: none;
     border: 1px solid darkgrey;
-  }
-
-  #portrait {
-    /* display: none; */
-    /* margin-right: 40px; */
   }
 
   #print {
