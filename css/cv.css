@@ -117,14 +117,6 @@ a {
   font-size: 0.9em;
 }
 
-.block-title .block-title-name{
-  width: 100%;
-}
-
-.block-title .block-title-period{
-  width: 100%;
-}
-
 .card-title{
   background-color: #e4e7ec;
 }
@@ -173,6 +165,15 @@ h8 {
 #print {
   float: right;
   cursor: pointer;
+}
+
+.block-title-name 
+{
+  width: 60%;
+}
+
+.block-title-period {
+  width: 40%;
 }
 
 @media (max-width: 750px) {
