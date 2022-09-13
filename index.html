@@ -52,6 +52,17 @@
     </div>
     <div>
         <div class="row">
+            <div class="col l12 only-print resume">
+                <h4>Infos
+                    <div id="print" ng-click="print()">
+                        <i class="fa fa-print" aria-hidden="true"></i>
+                    </div></h4>
+                <ul>
+                    <li ng-repeat="m in cv.resume">
+                        {{ m }}
+                    </li>
+                </ul>
+            </div>
             <div id="left-panel" class="col l4 s12">
                 <div id="competences">
                     <h4>Compétences</h4>
@@ -117,7 +128,7 @@
                 <div id="perso">
                     <div id="formations">
                         <h4>Formations</h4>
-                        <ul  style="padding: 0 0.75em;">
+                        <ul style="padding: 0 0.75em;">
                             <li ng-repeat="formation in cv.formations">
                                 <div>
                                     <b>{{ formation.annee }} – {{ formation.nom }}</b>
@@ -139,10 +150,19 @@
                 </div>
             </div>
             <div id="right-panel" class="col l8 s12" ng-controller="projetController">
+                <div class="no-print resume">
+                    <h4>Infos
+                        <div id="print" ng-click="print()">
+                            <i class="fa fa-print" aria-hidden="true"></i>
+                        </div>
+                    </h4>
+                    <ul>
+                        <li ng-repeat="m in cv.resume">
+                            {{ m }}
+                        </li>
+                    </ul>
+                </div>
                 <h4>Expériences professionnelles
-                    <div id="print" ng-click="print()">
-                        <i class="fa fa-print" aria-hidden="true"></i>
-                    </div>
                 </h4>
                 <div ng-repeat="projet in projets" class="card projects">
                     <div ng-include="'template-project'"></div>

@@ -43,9 +43,13 @@ angular
             },
             "interets": [
                 "Natation", "Badminton", "Danses de salon"
-            ]
+            ],
+            "resume":[
+                "Avec mes années d'expérience en développement dans les technologies de Microsoft .Net et Angular, j'ai acquis des compétences techniques et métiers solides.",
+                "Responsable technique d'une équipe de 4 personnes, j'accompagne l'équipe sur les aspects techniques, management, intégration, support et déploiement.",
+                "Habituée à travailler en équipe, j'ai un bon relationnel avec les différents interlocuteurs.",
+                "Je suis motivée, rigoureuse !"]
         };
-
 
         var _projets = [
             {

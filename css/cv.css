@@ -1,321 +1,322 @@
 html {
-  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
 a {
-  color: #000;
+    color: #000;
 }
 
 #panel-header {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  background-color: #fffcf0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fffcf0;
 }
 
 #panel-header .row {
-  padding: 10px;
-  margin-bottom: 0;
+    padding: 10px;
+    margin-bottom: 0;
 }
 
 .civilite {
-  margin-top: 1rem;
-  margin-bottom: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
 }
 
 .age {
-  margin-left: 0;
-  /*font-size: 0.3em;*/
+    margin-left: 0;
+    /*font-size: 0.3em;*/
 }
 
 .position {
-  margin: 0.5rem 0 0.3rem 0;
-  font-size: 1.5em;
+    margin: 0.5rem 0 0.3rem 0;
+    font-size: 1.5em;
 }
 
 .search {
-  margin: 0.5rem 0 0.3rem 0;
-  font-size: 1.5em;
+    margin: 0.5rem 0 0.3rem 0;
+    font-size: 1.5em;
 }
 
 .coord {
-  text-align: left;
-  display: inline-block;
-  margin-top: 0;
+    text-align: left;
+    display: inline-block;
+    margin-top: 0;
 }
 
 .coord i {
-  margin-right: 2px;
+    margin-right: 2px;
 }
 
 .coord .fa-phone {
-  margin-right: 4px;
+    margin-right: 4px;
 }
 
 .coord .fa-globe~span:last-child {
-  margin-left: 15px;
+    margin-left: 15px;
 }
 
 .coord .fa-github {
-  margin-right: 6px;
+    margin-right: 6px;
 }
 
 #portrait {
-  display: inline-block;
-  background-color: #fff;
-  line-height: 0;
+    display: inline-block;
+    background-color: #fff;
+    line-height: 0;
 }
 
 #portrait img {
-  width: 210px;
-  border: 2px solid black;
+    width: 210px;
+    border: 2px solid black;
 }
 
 #competences .fa-filter {
-  font-size: 0.4em;
-  cursor: pointer;
+    font-size: 0.4em;
+    cursor: pointer;
 }
 
 .competences .row {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .competences i {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .comma::after {
-  content: ", ";
+    content: ", ";
 }
 
 .comma:last-child::after {
-  content: "";
+    content: "";
 }
 
 .competences span.comma>span {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .competences span.comma>span:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #interets i {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 
 .card {
-  margin: 8px !important;
-  padding-bottom: 5px;
+    margin: 8px !important;
+    padding-bottom: 5px;
 }
 
 .card-poste .block-title {
-  font-size: 1.1em;
-  margin: 0;
-  padding: 7px;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 7px;
 }
 
 .card .block-title {
-  font-size: 1.1em;
-  margin: 0;
-  padding: 7px;
-  display: flex;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 7px;
+    display: flex;
 }
 
 .card .card .block-title {
-  font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 .card-title {
-  background-color: #e4e7ec;
+    background-color: #e4e7ec;
 }
 
 .card .card .card-title {
-  background-color: #c9d6de;
+    background-color: #c9d6de;
 }
 
 .card .card-poste-title .card-poste .block-title {
-  font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 .card .card-poste-title .card-poste .card-title {
-  background-color: #6d819c;
+    background-color: #6d819c;
 }
 
 .card .card-poste-title .block-title {
-  font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 .card .card .card .block-title {
-  font-size: 0.7em;
+    font-size: 0.7em;
 }
 
 .exp-content {
-  padding: 10px;
+    padding: 10px;
 }
 
 .exp-type {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 .card ul {
-  margin: 5px;
+    margin: 5px;
 }
 
 .card ul li i {
-  margin-right: 2px;
+    margin-right: 2px;
 }
 
 h8 {
-  text-decoration: underline black;
-  font-weight: bold;
+    text-decoration: underline black;
+    font-weight: bold;
 }
 
 #print {
-  float: right;
-  cursor: pointer;
+    float: right;
+    cursor: pointer;
 }
 
 .block-title-name {
-  width: 60%;
+    width: 60%;
 }
 
 .block-title-period {
-  width: 40%;
+    width: 40%;
+}
+
+.only-print {
+    display: none;
 }
 
 @media (max-width: 750px) {
-  .title-with-date {
-    height: 72px;
-  }
+    .title-with-date {
+        height: 72px;
+    }
+}
+
+@media (max-width: 975px) {
+    .resume.only-print {
+        display: block !important;
+    }
+    .resume.no-print {
+        display: none !important;
+    }
 }
 
 @media print {
-
-  #panel-header .row {
-    display: flex;
-  }
-
-  body {
-    font-size: small;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  .position {
-    font-size: 1.25em;
-  }
-
-  .card {
-    margin: 5px !important;
-  }
-
-  .card.projects {
-    border: none !important;
-  }
-
-  .card.projects .projects .card-poste-title .card-title {
-    border: none !important;
-  }
-
-  .card.projects .projects .card-title {
-    -webkit-print-color-adjust: exact !important;
-    color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-
-  .card .card-poste-title .card-poste .card-title {
-    background-color: #afbed1 !important;
-  }
-
-  .card.projects .card-title {
-    border-bottom: 5px solid darkgrey;
-  }
-
-  .card .card-title {
-    background-color: white !important;
-  }
-
-  .card .card .card-title {
-    background-color: #c9d6de !important;
-  }
-
-  .card.projects .projects .card-title {
-    border: none;
-  }
-
-  h3 {
-    font-size: 2.28rem;
-    margin: 0.82rem 0 0.82rem 0;
-  }
-
-  .block-title {
-    font-size: 1.64rem;
-  }
-
-  h5 {
-    margin: 0.41rem 0 0.41rem 0;
-  }
-
-  ul {
-    margin: 0.2rem 0 0.2rem 0;
-  }
-
-  .exp-content {
-    padding: 5px;
-  }
-
-  .container {
-    width: 97%;
-  }
-
-  #panel-header {
-    border-bottom: none;
-  }
-
-  #left-panel {
-    width: 100% !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
-  #competences {
-    flex: 45;
-  }
-
-  #competences .block-title {
-    font-size: 1.64rem;
-    line-height: 110%;
-    margin: 0.41rem 0 0.41rem 0;
-  }
-
-  #perso {
-    flex: 50;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #formations {
-    flex: auto;
-  }
-
-  #interets {
-    flex: auto;
-  }
-
-  .avoid-page-break {
-    page-break-inside: avoid;
-  }
-
-  .card {
-    box-shadow: none;
-    border: 1px solid darkgrey;
-  }
-
-  #print {
-    display: none;
-  }
+    @page {
+        size: auto;
+    }
+    #panel-header {
+        box-shadow: none;
+        background-color: white !important;
+        border-bottom: 2px solid lightgrey !important;
+    }
+    #panel-header .row {
+        display: flex;
+    }
+    #portrait img {
+        border: 2px solid lightgrey;
+    }
+    body {
+        font-size: small;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .position {
+        font-size: 1.25em;
+    }
+    .card {
+        margin: 5px !important;
+    }
+    .card.projects {
+        border: none !important;
+    }
+    .card.projects .projects .card-poste-title .card-title {
+        border: none !important;
+    }
+    .card.projects .projects .card-title {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    .card .card-poste-title .card-poste .card-title {
+        background-color: #afbed1 !important;
+    }
+    .card.projects .card-title {
+        border-bottom: 5px solid lightgrey;
+    }
+    .card .card-title {
+        background-color: white !important;
+    }
+    .card .card .card-title {
+        background-color: #c9d6de !important;
+    }
+    .card.projects .projects .card-title {
+        border: none;
+    }
+    h3 {
+        font-size: 2.28rem;
+        margin: 0.82rem 0 0.82rem 0;
+    }
+    .block-title {
+        font-size: 1.64rem;
+    }
+    h5 {
+        margin: 0.41rem 0 0.41rem 0;
+    }
+    ul {
+        margin: 0.2rem 0 0.2rem 0;
+    }
+    .exp-content {
+        padding: 5px;
+    }
+    .container {
+        width: 97%;
+    }
+    #panel-header {
+        border-bottom: none;
+    }
+    #left-panel {
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    #competences {
+        flex: 45;
+    }
+    #competences .block-title {
+        font-size: 1.64rem;
+        line-height: 110%;
+        margin: 0.41rem 0 0.41rem 0;
+    }
+    #perso {
+        flex: 50;
+        display: flex;
+        flex-direction: column;
+    }
+    #formations {
+        flex: auto;
+    }
+    #interets {
+        flex: auto;
+    }
+    .avoid-page-break {
+        page-break-inside: avoid;
+    }
+    .card {
+        box-shadow: none;
+        border: 1px solid darkgrey;
+    }
+    #print {
+        display: none;
+    }
+    .no-print {
+        display: none;
+    }
+    .only-print {
+        display: block;
+    }
 }
